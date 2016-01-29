@@ -4,6 +4,7 @@
   npm:
     name: pm2
     global: yes
+    executable: "{{ npm_executable }}"
     version: "{{ pm2_version | default(omit) }}"
   notify: restart pm2
 
